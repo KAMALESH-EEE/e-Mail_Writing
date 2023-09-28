@@ -7,7 +7,7 @@ def text():
         return t
     except:
         print('Re_Try')
-        text()
+        return text()
 
 def details():
     speech('For Who?')
@@ -27,7 +27,7 @@ def WriteMail():
         ta=text()
         
         if ta =='end':
-            cont.append(tex+'.')
+            cont.append(tex)
             break
         elif ta=='new line':
             tex+='\n'
