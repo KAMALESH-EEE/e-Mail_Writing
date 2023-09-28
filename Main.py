@@ -1,6 +1,6 @@
 from TextVoice import voice,speech
 cont=[]
-
+myname='R KAMALESH'
 def text():
     try:
         t=voice()
@@ -13,7 +13,7 @@ def details():
     speech('For Who?')
     print('For Who?')
     global cont
-    cont.append("From:\n\tR KAMALESH\n")
+    cont.append("From:\n\t"+myname+"\n")
     ta = voice()
     cont.append("To:\n\t"+ta+'\n')
     cont.append('Respected: Sir/Madam\n\t')
